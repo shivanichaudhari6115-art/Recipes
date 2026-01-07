@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Veg Recipe World</title>
+<link rel="stylesheet" href="home1.css">
+<style>
+body{
+background:url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8QDxAQDxAQFRUVFRAVFRUVDxUYEA8VFRUWFxUVGBcYICgiGBolHhUWITEhJSkrLi4uFyAzODMtNygxLisBCgoKDg0OGxAQGismHSI3Ly0rNy8tLS0tLSstLS0tLS0rLy0tLTUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAAAQUGAgQHAwj/xAA+EAABAwIEBAUBBgQFAwUAAAABAAIRAwQFEiExBkFRYRMicYGRMgdCocHR8BQjUrFicoLh8RUWJDNTkqLC/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAIDBAEFBv/EACwRAAICAQQBAwIGAwEAAAAAAAABAhEDBBIhMUETInEFoTJRYYGx8CORwRT/2gAMAwEAAhEDEQA/AO1oSQgBCEIAQhJACEIQAkmkgBJNCASEIQCQmkgEhNJACSaEBiVrX1yKVN9Q7Na5x6mBK2ite6oNqMexw0cC09wRBQHNKvGN42s98tyM+7plPlzERvEaTMyrs/EhcWtCvSANN7rd7piQwkHn0MT6Kg45wTcip5KxdTBMCIdr15E91deHbCLXwKo0iIk7eqhmqS2osxrb7mSOKXppnMRI0iOU7yq1il5nlzj/AMfms8Zq3tvLGMFSmPpJqQ+I2cYMx19FT8RxG7qjKKTKBMyS/M8a8gBE9J6L5/WaXJmnzKkvB6Wn2xVmtUql1210eWkNXTs5xzEDqQAPldWwpwqUWzzC5xgGCPeG02NOXNmc9xl1Q7k+5nvqumWlA0mNGgMfC9TSY3CP6FWp9zVFZx/gqhWJcGAHtsfZVO44RpW8FzmMEwCQAT26ldRq3bhuAR8FUTiei59w6tDjTgAc/D0EtIH06/PdS1E/TjuijPLfFclRxvykUqGoJAzA6vka+g1j2Vk4Iw1tIPq66+Sep0LvjQfK0atjnDzTY4uZDieUCZ9/xW5hF9Sblt6VQOIJJMEAknUD9Fj0+RznukVLl8l4oVFF4NiDf4iuDE5spkaAyXH10qNUhYsMBVbia3qW1cV6bHOB3DdSe4bzIkgjmIO4WzPdJrwehotsnKD8ovovswBBkAaw7zDcwR6A+ui1qmIMe5zXOaDzJdpnMhrR6byFz+04np1Bo7XYjWQR1G435wvPEuLGND8z5LiepcZaW5YGh35qC1MumiyWiS6ZO3+Is/iKL9RmqNgBoIJDZnP/AJc20g69FPux6gyBUq02mJgvAMLh2IcR1qlYVBMtBbSbvlLuZjTadB17rovC2BA0CXta95e4vfUbmc50CYJ5DQeyS1HoxuXbMmaClKl4OsISQvQMQ0JIQAhCEAIQhACEIQCQmkgBJNJACEIQCQhCASE0kAivN5hehWDgh1HL+KeI3VKpLHEMYYZD4z76mDOvUxyGsrc4R4zBqfw90/zEwx5EQdAGOPP/ADKocW276FepTdmgOcW+YzlPQxAkHv8ArCWFJz3tiNC0n2PUfvReepyUz7DLpdM9KlXFcM+iKlJrxqFGVsBpOM5R8L2wa78RgKlmhbqTPkrcXRE2FsxjyGj6R0MS4kb7HRv491lXqSVpi7DK1RjiZJeNWwPK4kCf8rh8FOpWHJQs2qDMazlBXFz4VxSf91xDH9CHGB8Ej8VKV6yqHEd2HOpsGsvZ7AHMT7Af2UJMtUbVMlON6D220U2+UvGaBoBvOncKk2jCNYgmCN911e1qCrTggEEajkZ5KKdwaKhc5j8gBPlLJHsZ0Cx6jA3LdE81wbfBt8MXfjUWk/UPK71HP3EKVvbFtVkFavD+GPtWOY5wdJmYhblzVLPMPcf1D9VfjyvbU0WqDXT5OdY/wkMxdkY8RGrG5hH+IDN+PJVS6wh1OfDpNZpEtGvyu2l1OswPbqDsYVdxOlbh2Vz6YceRe0O+FP0Y9ou/9eSqbOO0LM0qrXv0AMnrEifUxK6I/jJlgTQNC7qyS/PTpZmecyQHGJAMjbtyWHEHDQq0XBgBcPM0f1R9332Vfw/ihlKkylWtnVjTGRrj4YeGjZjg4kgjUblZtTi3Vav7FMm3zHs+gkJIXpmYaEkIBpIQgGkhCAEIQgBCSEAIQhACEJIAQhCASEIQCSIWSSAg+IcDpXLf5jASNjsR2kclTv8AtIMqEjYnXqV0twlaz6AUHBN2XRzzUdt8Efg9vkaApphWuynC9mqSRW3ZA8UYc5wNSnM7kDeQNHA8j++ZVSdjb2aPBnblm/8Ajz/0z7LpdQSIVTx7h6nVk5RO+2irlDyjXh1NLbIql3jxOjWvk9Rlb7l35SeyiACXmo8y46Dk1jdPKB7STue0Qpmrw+5p029FhTwvKZdsFU4vyXvKnxEsvDdQ5ACrJYVwQ9s6g/kFS/8ArdraMaatQCdgNXOjcgDl3W9/1MPYy6tXB1N3rETqCNwZ/fSORulXgqWN9tUmWp71HYjXAafQqJHErCJcHt05tP8AcaKt8Q8UBzS1knl6fn7rPKafRJY2uzC94pNtZuY10OdVewO5sDiXEjvvHqqrjNnaimalSCXDzF7pa2TvJ2MxzUja4G67tajDLSTmYY+lw206co6FVDF8HxAfyqlJxA0BDhkOv1anT4C9DBJKHJizxbm6Lh9lmM1T4lpWdmDINMknM0SQWa8gQI15nlCu19wta1nmpUosLjEmNT6xuqL9neCOovzO1cYzEbCNmzz5rrtJmgXXUgriTyEIUysEIQgBCEIAQhCAEIQgBCSEA0kIQAhCEAJJpIAQhCAEk0kAkiFkkgMYQmgoDElRuNeJ4FQ0RLw05R37TzUi5U/jnG6tuwtoyHeG55IAzRJAAnb1XUrDZD8E17t3iMu87vMS0vHmAnaTrG2/fktP7S7hlOnTpHUPFQkAwZaP5Z7jN/YLz4X4mrC6ZRuajX+IXAHLBYQCQZ3I8sc9xstr7TeH61x4NxQYXlocx4ESG/U13zI9wqc6ai6PQ+nyh60d3C/6czZncIbOgJMD6WicxJ6QfxhdK+y+6puoVLeILXE9nB33tdtVzqrb1gQ14dIAbEkmBqGwDt+CvX2b2dSnUe54hzjrryGw/usuK9x7H1FxeF8/BZsU4apPJIbHooY8PUKRJcWyNYJ1+FcsWvRSpzoXGMo6yYXjhmAF58W7JM6+HqGjXdw59gmWXv2Y1b+yPFx/h3TfH3ZCYcKpH/jUSYj7vzqdFnd296XAutARzALDHw6VfG0wAA0AAco2/IJEjv8AOi6tPPzN3+xB54+IIpdhcUWGKlM0TrGdpAMb7gforGwiBBC2bmiyo0tc0OB5Eaf891TcSbf2r/CtmuqUolpyglgJIyEnpHxCk5zxL3e5fouSKjHI+OH9joCEk1sMwISTQAhJCAaEkIBoSQgGhJCAaEkIAQhCAEIQgBCEIBIQhACSEIASKaSAxIVb4w4f/i6YLHllRk5XATodwRzCspWLglg4/hPCVWhXa+oS5zSYdEAf7xoum2rfKAeiwxi5pUGGpU9AObjyAXOLnja88WaZaGy6GhktIAmJiSCP2FTPIovk9LS6HLqY3BUl+ZesRwqi4jOGgkwOUnoOp3Xph+FspfSIXN8SxGpi1RjGkU6rBmptzuFOofvR/SYAI3O+0ldHwhldlkBXPiVQx0nbOYMT+qjGd26K8+CeJqMnyaeHH+Iv9XBwZLgBtlYfJPXV0q2udz9/nn8R8qn8FFviVoADixsdgHHNHbUfCtxcADIn+2hMf2VGj5x7n27ZzV8ZNq6SQ6QL9Y05TGv77L0fDYzRGs+3f5VHwnjo1LrwarSzO8tY1wIewgEhrtDqY2IGpU9xK9ta3fRdmiqx7HFrgHAOBEg9dStEJJq0UZMcoumZ22M29Sv4LKjS6C7QiCO2skd1vVaZJ0H73/Ncs4e4YNvdsreKXBrpkgio7ylrcx5gTAaNIldQp1iQIBPUjqkXfYmkujeQkhXlA0JIQDQkhDo0IQgBCSEA0JIQDQkhANCSEA0JIQDSQhACChCASEJIAQkiUAJEJOeACTEDuvCxvqdZpLDMGHDm09Cob1e2+SW11fgqv2i2ld9Om+k3M1mbOAAXNBjUNP1bbdlyG8utJHOYiYB2LRz2Os9V9GXFMOEFUfiPhKhWzHIATuRpPr+qpyYbdo9nQ/VPSxelJcHPeCaFT+IbXOwkN7nYn0iR7rtlEZ6ZaebSNN9RCpeBYMGO0LTGmhENjlpsrtaNgQpwjSowanO8s9xV+E3CncOYQQctRoLj5nODg48+gPwro09T0/8A0qfxVaVKdVtzTPNvInK4bEwdRpEd+6msExVtxSB0Dho9oP0O/Q6kdisuD/G3ifyvg7n96WRfuZXOCW7qwufCp+KIh2XzdN+vLroVjfs6jYH8Msfp7rcqOc3vvr7O/VaF5dNdo4T9XLWDB6jotPCM/LI2kAXnLsCeegj+y2HXL3fQCQNBEwvJ9Iu28rOpED8SZ/ei0rziC1oP8IkEiJ0fI7Q3b31UTpfEJIWkoGmkhANCSEA0JIQ6NCSEA0JIQ4NCSEOjQkhANCSEA0JIQAhCEAJFBSKAF43FwymMz3ABZVHhoLjsASfZUi+vqt9V8OkWhrSZiSAP6ieu0BZc+f06S5k+jRgw+py+Eux4piVa6qOpUycmbUAawOp6HqpPCcPNsHVGEkkCQT5IH6fkt/CsKbSYGie5P1PPU/GylA2FRiwtPfJ3L+C7JmTWyK9pgypIE9FXeOaVc2jjQGYgtLmgSXsH1AdVKUppvdTO27f8p2HsZHwtvQhb4y8mNo4hwheV24iCwFtOHNc2PK7aP1XUsX4ho2babq2bzmAGtk8t9e4+V4YpY0qdak5tMF73ZW6c/wBlaPEHA767arq1Zo8zHMDS7+rzhxEHaIiIhUSyycnGK+f0L4Y4JJyfH8kpgvEVtiDSKecGCS17YMBxadiRuFB17GrYVjWtxmaZDmHTM3cDNyj02UXwbht1YOd4zWkNY5rXNqAurudUzTHIdzrqo3inia6tMTY6q4ut3taWsiG5HRm05vB5nsNMy5JKX4uyS9re3ovVvxnbFjRVPhO1kOnykdXAQB3OnotPEeNbCm/IajHOifK17o9TTkBeVzglKuxtRkEOGYEbEHUFVu/4YgmJUvcVe09sS44dUltuzLyzObBPpqT+IVeb/eT7nded1So0XFr6kuAktbq4bb8ge269KeN2bWjM2sJEjyN1HX6uyU2S+D6ATWKa0GYaEkIBoSQgGhJCAaJSQgHKEkIBoSQgGmkkh0aaxTQAiUkIBpIlKUAysUSvG7reGxzzHlBOu2ijJpK2SSt0it8ZX0tbRpuOafMB7QO/Nb+AYSKDJMSdXbbnYegULgNqbqs+6fEB2g1+rePbRXNggLzsCeSTyy89fBuzPZFYl47+TIBCChajKaOJ0iWh7d2mfVv3h+fssberIW84Tuoim3w3lh5at7tO36eynFkWe0E3DS92WmxpcP8AE76Y9YO3+60sexkU6FWrlcWMyzAkgFw1K9sXtjWovY1xaSNHA6tIMqkuu7m08Wk9vi06kF2aoc4PMhzpnkI0GndVSex9cPmy2KU18eDWvuKKFejcOtqhDqJDm1I0IbDnN125jXoOqq+O8S0L9tHxG0hldmYHE5ntBgzro0kbHeAtS9w5rn1XU25G1A4OY0GJP3h3/fZQIwO6pnL4eYEZc+YBsehVuKUW22RyxaS2nb+B8Yo3NqPDbkyF1N1P/wBtzeQ7bEeqiftCxl1BraNExUqfe5027SO87fsrT+zSxdb03NP3nZnGNCYA0+AoXiKoamLVGv1AqMaNAS3yt0A06g7+4UpP8jmONvk2OHeE6Ja51zVLDlLxqBmk6knuJ823lIMKwW2G06Wan4L3FpAOXMQ3ytIBJaJOUtJ0G8dztWF5QDWVKTG+IMzJdU/lHKfOSXO8o0AmdZHl5LeDajtc9Vgl+UNdVbLczspLQNDHWDoPVTUUclN2XdNYprpSNCSEA0IQgBCESgBCEIATSQgBCEIATSQgGhJCHRrElErEoDUo4pRfVfSa4Z2mCOsDWOsfktDibGTbUvIAajpDJ+kbS4/KqWOW7reu4aiSXMdO4mRqOYWnVxN11kNQy6A0xyDNzpsTr7rx56+e2UGql0CR4ZxisLppqvc4VTDp2k/RA5e3JXLiCzqV7dzKRaHaGHE5XROhI2/2VAw8TcUzzztgcwJ7bCBt8rp9M6LRpP8AJicZdEoScWpIrPD95Rt6bKFWo1lSXFwcYkzJgnca7qx0q7XCWuafQghROMYa1+sD4VcucPIMtJB6gkH5CvUNipdIuct7t9l8lNUCniV5SIy1nEDk8Bw+Tr+K3qPF1Vv/AKlFru7XFv4GUs5RcVo4pRloeN2b9281F0eL7U/X4jPVkj/6yt61xq0ry2nXpO5FuYT6QdUs5THRfIUZjtBgpve4DQE+vZbNs00yWOJMHQnm37p+FH4nbtr3ltTzTl8z2k+UN3n8EzTahx2+P9ksUU5c9IqVix1y80qFJucjNq5uVrNJO+p1Hz2UhieG17S3FWtTYQIDi05tToNDAAJgb81eKDbNtxkptpeLGhFMAkHcBwGuylatEVGllRgc07gjQ+yqx4XTuXJZPMrXt4KbhHhuZLARBLTLSIcACRr6hc8+0bD6tteNu2FwbUy+YEh1Oq0RvyloB/0ldTvrMW1MU6YcYe+pJMucMphpJ1J2H+lRHjUb20mvTaAQQ9j9QxzTBBJ2II3WhPin2U3T3Loo/C3EzHui4eHeIHZ21B5GDSSAPqfIcY0JaSZ5K0Ydi1J1JpBe9sAteberULmkTJdmE7ncTEdVT7/gx1MvdZXDmsfEiA4EDkHAgx2MrzoW2IU2hgvCAAAB/Dt0AU1KiLpneU0kKZUNCSEA0JJoATSQgGhJCAaEkIBoSlKUBkklKCUA5SlYkqHx3HqdqGggvc7ZoOsdT20UXJJWy3FilkltgrZLVquVrnHYAnvoJVawPjKlc3DqGXKYJY4PkOA3B0EEe62cC4lo3bnMDSx4ElpMg9QDzj81hT4Zt6dx49JgYSSTlAAJRTTXB3LgniltmqZG4li9niDqtozO6qxrns0AD3DSGk+o3HPsoEcOXNIuhoM8ydhzOmmp/CFK4rhdvhtR1/qAD9M9eQ6Dso6vjz61B1Q1aoFUF7aRYG5WB30uLgCARtl33WHVRxybbXJbh0zyUT3DmCOY4VK0T90A6CefqrPe3jKFJ1R85WgTG+pgf3XJ7yg6WmnXq0nUycrWFz6AjRoyE7TOxU1hnEda4FW1xAtp+KxzaTw2ab3aEEH40Ouihp9TDbtjx/fJonoXCSvr+9HviX2gFrxkotcydQXHOW/1TADemsqwWteldUm1qRlrgD3B5g9CFyHF8MvmPy1Ggnm/MCzTaDvHZXHhrFaWHWP/AJTwNXODfv1CTJyt3OpV+Ocr9xp+o4tJDGvR7LHXs1oVrHsvbhLHv4+g+sWBkVHsABnQQW+8OEqXfSBV6SfJ5CkU6+soBVAr8R1G1f5VFrhJgucQ9wB1IAGg03K7Nc2IcCOoI+VyHGOGb2lWyeHmDQQyqCA1zZkB7TsdvxXVCPk45vwdI4PxRtxQbUaSQZ33bBILfYyFLXrmUn/xBaToGvytl7mgzAPL99FV+AcPdbW4Y6NC4mNpcSTHyljHGsXVO0tqQrHMBV10aNnQeo3J25bnSMkqLIJ2WGz42tqlenQpMc17s2QGkS6Il3m1A2U9XuHNbnrVHNHJs+Z3oOSoWI4VUoVmXNqGh7c5bmBLfM0jUc9wY7KGZiuJOe9tXzvgEVC4tZvzaBr8hUKbSqXZbLEnzHos/EWMsefCNfwqjmnJAJcyQYOxj17Ln/GOJvbbCkXGH1WZv8QDXH4lrVM2ljUc41bk56pjzQBAAgABuihOP7F3h0HgaF5B9cun4SpRdvcyrKko0jS4TxqraPEEuoOPnZybJHmb0dzjn+I6xQtaNZoqU3Nc07OBBB5brkuDWkscCNoP5forZw9e3FvRNOmAW53HVuaJA01Ij/dUx1KUnFmeJ2SUShC9EAmkhANCEIAQkhANEpIQDQkhANCSEAIQhAaeJ3XhUatWAcjHOg7GBK45iOJCtVe+pUIzF0mARptyJiTHTQjXZCFk1D6R9J9DgtspeeiEp4lUpPzMcWvBlpbpkMySBy3iPVdo4Pxo3dpSqvEOIId3LSWkjsYn3TQo6d8k/rKUsak+7IL7QqzhVoBjm6sqh4cBAa4gSO+vwCoh9SiymMpzlxEEZg1gEaNBJIgzpPxskhedrJvc0YYNw06lHvj+SOuLrI72cI2GoIP4EqFv8VLq9uGASKoftJ0EGOjYlNCr0kE+X4PV1fGNtF+r4vRp2Trp7c+WABze4mAJ5DuuT3LX3Vdz3O1cS953DG8gOvIAeiaF6jbtI+X/ABTpk7a+L4QtLZ1yfqdkpa6u5uMQdRBJ220Uve8Pmxsm3P8AE3NK4yhwY14IIJhjXADU7E8vUBCFLJJxqjTFK6LJwPxObkeDcEeKBIcBlFVvWOTxzHuNFbK1mx41AKELRHlGaaqXBp3mEh9KpTaXNzNc3M0w5siJB5FQPCvBlOyBJOd5OryNTG3oOyELkkSjJ9Ere37PpZTfUMwA0fieg7mPxUXXtKh1NFg6jPLuft0+e2ohedPNN82evHBjjxQrNlJzshlrtNHd+h2Kk7rBadei+i8aOEdweRHcFCFpwS9SPuMGtxRxzqJT/wDtatb1NszdpA5en4qTw2z8mjZ1M6fSRpCELMtPGORsxJH/2Q==")
+no-repeat fixed;
+background-size:cover;
+
+}
+</style>
+</head>
+<body>
+<h1> Desserts</h1>
+<img src="chocalate.jfif" style=background" repeat:no-repeat;>
+<p>
+<h2>COFFEE CHOCOLATE MOUSSE</h2>
+
+Preparation time: 15 minutes<br>
+Serving: 2<br>
+
+<h2>Ingredients</h2>
+200 gms Dark chocolate <br>
+1 tsp Coffee powder<br>
+2-3 tbsp Butter<br>
+1 cup Whipping cream<br>
+
+<h2>For Garnish</h2>
+Orange wedges<br>
+Dragon fruit wedges<br>
+Grapes, sliced<br>
+Mint leaves<br>
+Icing sugar<br>
+
+<h2>Process:</h2>
+
+1. Slice the chocolate block using Philip's mixer with it's slicing attachment.<br>
+2. Then add the chocolate in a bowl and place on the boiling water to melt the chocolate.<br>
+3. Once chocolate is melted add coffee powder, butter in it and mix everything properly.<br>
+4. Meanwhile in a blender jar add whipping cream and blend it until soft peaks.<br>
+Then add some to the chocolate mixture in it and blend it again.<br>
+5. Now remove this mixture in a bowl and mix in the remaining chocolate mixture.<br>
+6. To serve the mousse, take a serving glass and  apply some chocolate on its inner surface and fill it with the chocolate cream mixture, keep in the fridge to set for 30-35 minutes.<br>
+7. Remove and garnish with orange wedges, dragon fruit wedges, sliced grapes, mint leaves, icing sugar.<br>
+
+***********************
+For more fantastic recipes, check out the Ranveer Brar App:<br>
+📲𝐀𝐧𝐝𝐫𝐨𝐢𝐝 - http://bit.ly/RBAppAndroid<br>
+📲𝗶𝗢𝗦 - http://bit.ly/RBAppiOS
+</p><br>
+<img src="cheescake.jfif" alt="google" >
+<p>
+<h2>NO BAKE CHEESECAKE</h2>
+Preparation time 1 hour <br>
+Cooking time 20 minutes<br>
+Serving 2<br>
+
+<h2>Ingredients</h2>
+1 cup Cream cheese, क्रीम चीज़ <br>
+1 cup Hung curd, टंगा हुआ दही  <br>
+1 cup Whipping cream, विपिग क्रीम  <br>
+½ cup Sugar, चीनी <br>
+¼ tsp Lemon zest, लेमन जेस्ट <br>
+6 gms Agar agar, soaked in 4 tbsp water, अगर अगर<br>
+⅓ cup Strawberry puree , स्ट्रॉबेरी प्यूरी<br>
+
+<h2>For Base </h2>
+1 ½ cup Biscuits, crumbs, बिस्कुट<br>
+¼ cup Butter, मक्खन<br>
+
+<h2>Other Ingredients </h2>
+Ohp sheets, ओ एच पी शीट<br>
+Melted chocolate, पिघली हुई चॉकलेट <br>
+Dragon fruit, slice, ड्रैगन फ्रूट  <br>
+fresh Mint leaves, पुदीना पता  <br>
+Cocoa powder, कोको पाउडर<br>
+Icing sugar, आइसिंग  शुगर  <br>
+Pomegranate pearls, अनार के दाने<br>
+
+<h2>Process </h2>
+In a large bowl, add cream cheese, hung curd, whipping cream and half the sugar. <br>
+Using an electric  blender set at medium-high speed, beat the cream cheese in a large bowl until smooth.<br> 
+Add a little lemon zest and mix it well. <br>
+In a bowl, add agar agar and little water and soaked in it for 5 minutes. <br>
+In a large pan, add little water, soaked agar agar and mix it well. <br>
+Add sugar and mix it well. Then add strawberry puree then switch off the flame and mix everything well.<br>
+Transfer this into a bowl, let it come to a room temperature. <br>
+Once the strawberry puree mixture is at normal temperature pour it into a cream cheese mixture and mix it well.<br> 
+Pour the cream cheese mixture over the biscuit crust; smooth the top with a rubber spatula. and refrigerate until firm,1 to 1 ½ hours.<br>
+Take the cake out from the refrigerator and place on a cooling rack. <br>
+Once set, Place the ohp sheet in the center. Pour the melted chocolate in the center over the cheesecake. <br>
+Cover it from all the sides evenly. <br>
+Garnished it with dragon fruit, fresh mint leaves, cocoa powder, icing sugar and pomegranate pearls. <br>
+Cut it into a slice and serve. 
+
+<h2>For Base </h2>
+In a bowl, add biscuits and crush them with a rolling pin or hands.<br> 
+In a nonstick pan, add butter and let it melt completely. <br>
+Add biscuits crumbs and mix well until all the crumbs are nicely coated.<br>
+Press the crumb mixture into a cake tin, spreading evenly all the side; press flat. Chill crust in freezer for at least 10 minutes.<br>
+
+</p>
+<img src="doodhihalwa.jfif" alt="google">
+<p>
+<h2>LAUKI/DOODHI KA HALWA</h2>
+Preparation time 5 minutes<br>
+Cooking time 30-35 minutes<br>
+Serving 2-4<br>
+
+<h2>Ingredients </h2>
+
+3-4  heaped tbsp Ghee (घी)<br>
+1 Bottle gourd, pelled, thick grated (लौकी)<br>
+2 cups Milk (दूध)<br>
+A pinch baking soda  (बेकिंग सोडा)<br>
+½ cup Sugar  (चीनी)<br>
+½ tsp Cardamom powder  (इलायची पाउडर)<br>
+
+<h2>For Fried Nuts</h2>
+1 tbsp Ghee (घी) <br>
+1 tsp Chironji (चिरौंजी)<br>
+4-5 Almonds, chopped (बादाम)<br>
+4-5 Cashew nut, chopped (काजू) <br>
+
+<h2>For Garnish</h2>
+Rose petals  (गुलाब की पंखुड़ियां) <br>
+Silver vark  (चांदी का वर्ख)<br>
+Mint sprig  (पुदीने के पत्ते)<br>
+Fried Cashew nut (तला हुआ काजू)<br>
+
+<h2>Process </h2>
+In a pot, add milk and bring it to a boil.<br> 
+Add baking soda, and stir well.<br>
+In a heavy bottom pan, add ghee, grated bottle gourd and saute it well on medium flame.<br>
+Until the raw smell goes away and the moisture evaporates.<br> 
+Pour the hot milk to the sauteed lauki.<br>
+Cook on medium flame, keep stirring constantly.  <br>
+Now, add fried nuts and mix well. <br>
+Onces the milk is absorbed, add sugar. Keep stirring continuously until the halwa turns thick. <br>
+Now, add cardamom powder and cook for two minutes. <br>
+Garnished it with fried cashew, rose petals, silver vark and mint sprig. <br>
+Served warm or chilled. <br>
+For Fried Nuts<br>
+In a pan, add ghee, charoli, almonds and cashew nuts and fry until golden in color. Keep aside.<br>
+</p><br>
+
+<img src="pancake.jfif" alt="google">
+<p>
+<h2>EGGLESS DORA CAKE</h2>
+Preparation time 15 minutes<br>
+Cooking time 15-20 minutes<br>
+Serving 4<br>
+
+<h2>Ingredients</h2>
+1 cup Refined flour , मैदा<br>
+¾ cup Powdered sugar , पिसी हुई चीनी<br>
+3 tbsp Condensed milk , कंडेंस्ड मिल्क<br>
+½ tsp Baking powder , बेकिंग पाउडर<br>
+1 tsp Honey , शहद<br>
+1 tsp Vanilla essence , वनीला एसेंस<br>
+½ cup Milk , दूध<br>
+1 tbsp Butter , मक्खन<br>
+
+<h2>For Filling</h2>
+2 tbsp Hazelnut Chocolate Spread , हेज़लनट चॉकलेट स्प्रेड<br>
+
+The authentic filling is however made with red beans (azuki beans) cooked in sugar and made into a paste<br> 
+
+<h2>Process</h2>
+In a bowl add refined flour, powdered sugar, condensed milk, baking powder, honey, vanilla essence, milk, butter and mix well and make a batter.<br>
+Now heat a non-stick pan and a ladle full of the batter and cook it until golden brown then flip it on to the other side and cook that as well.<br>
+Repeat this process with the rest of the batter. And let them cool down a little.<br>
+Then take on cake and spread the hazelnut chocolate spread on it then place another cake on it and press a little.<br>
+Serving immediately and enjoy it.<br>
+</p><br>
+
+
+<img src="pudding.jfif" alt="google">
+<p>
+<h2>MANGO KALAKAND & PUDDING</h2>
+Preparation time 5-10 minutes (set time 2 hours)<br>
+Cooking time 25-30 minutes<br>
+Serve 2<br>
+
+<h2>Ingredients</h2>
+For Mango Pulp<br>
+4 no. Ripe Kesar mango (peeled & sliced) केसर आम <br>
+¼ cup Sugar, चीनी<br>
+
+<h2>For Kalakand</h2>
+1 cup Milk, दूध<br>
+3-4 tbsp Sugar, चीनी<br>
+500 gm Paneer, crumbled, पनीर<br>
+2 cups Prepared Mango Pulp, आम का गूदा<br>
+A pinch of Saffron, केसर<br>
+A pinch of salt, नमक स्वादअनुसार<br>
+½ tsp Ghee, घी <br>
+2-3 tbsp Mango, chopped, आम <br>
+2-4 no. Pistachios (blanched, Pelled, sliced) पिसता<br>
+A pinch of Saffron, केसर<br>
+A pinch of Cardamom powder, इलाइची पाउडर <br>
+
+<h2>For Garnish</h2>
+Ghee (for greasing tray) घी <br>
+1 Mango, sliced, आम <br>
+Mint sprig, पुदीना पता<br>
+Rose petals, गुलाब की पंखुड़ियाँ <br>
+
+<h2>For Mango Pudding</h2>
+2 cups Prepared Mango Pulp, आम का गूदा<br>
+½ cup Sugar, चीनी<br>
+1 cup Water, पानी<br>
+2-3 tbsp Condensed milk, कंडेन्स्ट मिल्क <br>
+¼ cup Cornstarch, कॉर्नस्टार्च <br>
+¼ cup Water, पानी<br>
+
+<h2>For Garnish </h2>
+frozen Butter (for greasing) मक्खन<br>
+Whipped cream, व्हिप्पड क्रीम <br>
+Mint sprig, पुदीना पता<br>
+Mango, sliced, आम <br>
+
+<h2>Process</h2>
+For Mango Pulp<br>
+In a bowl, add mango slices, sugar, transfer it into a mixer grinder jar and grind into smooth pulp.<br>
+Keep it aside for further use.<br>
+
+<h2>For Kalakand</h2>
+In a shallow pan, add milk, sugar and give it a boil.<br>
+Add crumble paneer and cook it for 3-4 minutes on low flame.<br>
+Add prepared mango pulp, saffron, salt to taste and cook until it thickens.<br>
+Finish it with some ghee and transfer it to a greased tray.<br>
+Garnish it with mango, pistachios, saffron and sprinkle some cardamom powder.<br>
+Refrigerate for 1-2 hrs, cut it into desired shapes and transfer it to a serving dish.<br>
+Garnish it with mango, mint sprig and rose petals.
+Serve cold.<br>
+
+<h2>For Mango Pudding</h2>
+In a sauce pot, add prepared mango pulp, sugar, water and get one quick boil.<br>
+Add condensed milk and cook it for 8-10 minutes on medium flame.<br>
+Add cornstarch, water and cook for a few minutes until it thickens on medium flame.<br>
+Grease the mold with butter, pour prepared mixture and refrigerate it for 1-2 hrs.<br>
+Demold the pudding on a serving dish, garnish it with whipped cream, mint sprig, and mango slice.<br>
+Serve cold.<br>
+</p><br>
+
+<img src="smoothy.jfif" alt="google">
+<p>
+<h2>MANGO SHAKE & SMOOTHIE</h2>
+Preparation time 10-15 minutes <br>
+Serve 2 <br>
+
+<h2>Ingredients </h2>
+For Sugar Syrup <br>
+2 cups Caster sugar, कैस्टर शुगर<br>
+1 ½ cups Sugar, चीनी<br>
+3-4 cups Water, पानी<br>
+1 tsp Lemon juice, नींबू का रस<br>
+
+<h2>For Sweetening Mango </h2>
+5-6 no. Mango, peeled & sliced, आम<br>
+1 cup Sugar Syrup, शुगर सिरप<br>
+
+<h2>For Mango Shake </h2>
+½ cup Sugar Syrup, शुगर सिरप<br>
+1 cup Sweetened Mango, आम<br>
+1 ½ cup Milk, दूध <br>
+1 tbsp Condensed milk, कंडेन्स्ट मिल्क<br>
+
+<h2>For Serving </h2>
+Sweetened Mango, cubes, आम<br>
+Prepared Mango Shake, मैंगो शेक<br>
+Vanilla ice cream, वनीला आइसक्रीम<br>
+fresh Mint sprig, पुदीना पत्ता <br>
+
+<h2>For Mango Smoothie </h2>
+½ cup Tender Coconut flesh, नारियल की मलाई<br>
+5-6 Almonds, बादाम<br>
+2 tbsp Coconut milk, नारियल का दूध<br>
+¼ cup Water, पानी<br>
+½ tbsp Honey, शहद<br>
+1 cup Sweetened Mango, आम<br>
+5-6 Ice cubes, बर्फ के टुकड़े<br>
+
+<h2>For Serving </h2>
+2 tsp Basil seeds, soaked, सब्जा बीज<br>
+fresh Mint sprig, पुदीना पत्ता <br>
+Mango, sliced, आम<br>
+
+
+<h2>Process</h2>
+For Sugar Syrup<br>
+In a saucepot, add caster sugar, sugar, water and boil it for 8-10 minutes on high flame.<br>
+Add lemon juice and cook well. Turn off the flame and transfer it to a bowl.<br>
+Keep it aside for further use.
+
+<h2>For Sweetening Mango</h2>
+In a bowl, add ripe mangoes, pour prepared sugar syrup and let it soak well.<br>
+Keep it aside for further use.<br>
+
+<h2>For Mango Shake</h2>
+In a mixer grinder jar, pour prepared sugar syrup, sweetened mangoes, milk, condensed milk and  blend it until smooth. <br>
+In a serving glass, add sweetened mango, pour prepared mango shake, garnish it with a scoop of vanilla ice cream and mint sprig.<br>
+Serve chilled.<br>
+
+<h2>For Mango Smoothie</h2>
+In a mixer grinder jar, add tender coconut flesh, almonds, coconut milk, water, honey, sweetened mango, ice cubes and blend it until smooth. <br>
+In a serving glass, pour prepared mango smoothie, garnish it with basil seeds, mint sprig and mango slices.<br>
+Serve chilled<br>
+</p><br><br>
+<footer>
+    <p>© 2025 Recipe World</p>
+</footer>
+
+</body>
+</html>
